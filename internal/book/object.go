@@ -13,8 +13,8 @@ func New() *Object {
 	return &Object{}
 }
 
-func (m *Object) FetchBooks(eventID uint32) ([]Book) {
-	s := []
+func (m *Object) FetchBooks() ([]Book) {
+	s := []Book{Book{1, "Buku 1"}, Book{2, "Buku 2"}}
 
 	return s
 }

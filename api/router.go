@@ -8,7 +8,7 @@ import (
 )
 
 type API struct {
-	book bookAPI
+	book BookAPI
 }
 
 var api API
