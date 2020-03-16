@@ -31,5 +31,5 @@ func (m BookAPI) publishBook(w http.ResponseWriter, r *http.Request) {
 
 	book.New().PublishBook(b)
 
-	handleJSONResponse(w, r.Body)
+	handleJSONResponse(w, b)
 }
