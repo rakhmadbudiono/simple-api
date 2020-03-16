@@ -7,11 +7,19 @@ import (
 	"time"
 
 	"github.com/rakhmadbudiono/simple-api/api"
+	"github.com/rakhmadbudiono/simple-api/util/pubsub"
 )
 
 func main() {
 	startServer()
+	startConsumer()
 }
+
+func startConsumer() {
+	pubsub.StartBookConsumer()
+	log.Println("Consumer connection is successfully established!")
+}
+
 
 func startServer() {
 	port := os.Getenv("PORT")
